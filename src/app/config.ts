@@ -1,6 +1,8 @@
 import debug from "debug";
 import { config } from "dotenv";
 import multer, { memoryStorage } from "multer";
+import { User } from "./entities/User";
+import { DataSourceOptions } from "typeorm";
 
 config();
 
@@ -9,7 +11,7 @@ export const error = debug("nodets:[error]");
 export const database = debug("nodets:[database]");
 export const input = debug("nodets:[input]");
 
-export const { port, origin } = process.env
+export const { port, origin, dbhost, dbuser, dbpass, dbname, mode } = process.env
 
 export const corsconfig = {
     origin: origin || null,

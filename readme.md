@@ -24,6 +24,8 @@ ya tener la aplicacion inicializado con el motor express junto con sus configura
 - **jest**: Framework de pruebas unitarias e integración.
 - **class-validator**: Validar objetos (como los datos de entrada en una API) usando decoradores en clases TypeScript.
 - **class-transformer**: Transformar objetos planos (como JSON) en instancias de clases TypeScript (y viceversa).
+- **typeorm**:  Librería para la coneccion a la base de datos.
+- **pg**:  driver de coneccion a la base de datos postgress.
 
 ### crear un archivo .env
 
@@ -44,6 +46,13 @@ node-ts/
 ```.env  
 port=4000  
 origin=http://localhost:12312  (aplicacion del front)
+
+dbhost=
+dbuser=
+dbpass=
+dbname=
+
+mode=dev
 ```
 
 ### multer

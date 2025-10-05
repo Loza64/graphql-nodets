@@ -4,8 +4,11 @@ import router from './routes/_index.route';
 import { corsconfig, jsonConfig, urlencodeconfig } from './config';
 import cors from 'cors'
 import helmet from 'helmet';
+import { InitDatabase } from './database/orm.db';
 
 const app = express();
+
+InitDatabase()
 
 app.use(helmet())
 app.use(cors(corsconfig))
