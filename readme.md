@@ -1,4 +1,4 @@
-# Node-TS: Plantilla Backend con Node.js + TypeScript
+# Node-TS: Plantilla Backend con Node.js + TypeOrm
 
 Este  es un proyecto inicializado de nodejs usando typescript, con el fin de
 ya tener la aplicacion inicializado con el motor express junto con sus configuraciones principales
