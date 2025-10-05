@@ -19,7 +19,7 @@ export const ormconfig: DataSourceOptions = {
     },
 }
 
-const AppDataSource = new DataSource(ormconfig);
+export const AppDataSource = new DataSource(ormconfig);
 
 export const InitDatabase = () => {
     AppDataSource.initialize()

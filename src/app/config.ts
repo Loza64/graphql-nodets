@@ -11,7 +11,7 @@ export const error = debug("nodets:[error]");
 export const database = debug("nodets:[database]");
 export const input = debug("nodets:[input]");
 
-export const { port, origin, dbhost, dbuser, dbpass, dbname, mode } = process.env
+export const { port = 3000, origin, dbhost, dbuser, dbpass, dbname, mode } = process.env
 
 export const corsconfig = {
     origin: origin || null,
