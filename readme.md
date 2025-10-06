@@ -62,8 +62,7 @@ y usarlo como quiera por ejemplo:
 
 ```post.route.ts
 // Ruta POST para subir archivos
-router.post('/upload', uploadFile, uploadFilesCloud);
-
+router.post('/upload/files', uploadFile, uploadFilesCloud);
 ```
 
 ### middleware
