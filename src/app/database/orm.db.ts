@@ -23,6 +23,6 @@ export const AppDataSource = new DataSource(ormconfig);
 
 export const InitDatabase = () => {
     AppDataSource.initialize()
-        .then(() => database('✅ Conectado a PostgreSQL'))
-        .catch((err) => error('❌ Error de conexión', err));
+        .then(() => database('connection succes'))
+        .catch((err) => error(err));
 }
