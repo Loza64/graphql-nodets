@@ -9,7 +9,6 @@ import { InitDatabase } from './database/orm.db';
 const app = express();
 
 InitDatabase()
-
 app.use(helmet())
 app.use(cors(corsconfig))
 app.use(express.json(jsonConfig))
